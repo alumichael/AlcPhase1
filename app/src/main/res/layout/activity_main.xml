@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:fitsSystemWindows="true"
+        android:theme="@style/MyToolBarTheme"
+        app:titleTextColor="#FFFFFF"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:title="@string/app_name">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_alc_4_0"
+        android:textColor="@color/colorBlack"
+        android:layout_margin="24dp"
+        android:textSize="26sp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+
+       >
+
+
+
+        <Button
+            android:id="@+id/about_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg_btn"
+            android:text="@string/about_alc"
+            android:textSize="25sp"
+            android:padding="8dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center"
+
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"/>
+
+
+        <Button
+            android:id="@+id/profile_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg_btn"
+            android:text="@string/my_profile"
+            android:textSize="25sp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:padding="8dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
